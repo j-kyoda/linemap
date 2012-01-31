@@ -1,0 +1,60 @@
+<style>
+ <body>
+  <padding>
+   <left>10</left>
+   <top>10</top>
+   <right>10</right>
+   <bottom>10</bottom>
+  </padding>
+ </body>
+ <station>
+  <mark>
+   <radius>14</radius>
+   <radius-inside>10</radius-inside>
+   <color-inside>#fff</color-inside>
+   <font>
+    <family>ＭＳ ゴシック</family>
+    <size>-10</size>
+    <weight>normal</weight>
+   </font>
+  </mark>
+  <text>
+   <font>
+    <family>ＭＳ ゴシック</family>
+    <size>-14</size>
+    <weight>normal</weight>
+   </font>
+   <margin>
+    <left>5</left>
+    <top>0</top>
+    <right>0</right>
+    <bottom>0</bottom>
+   </margin>
+  </text>
+ </station>
+ <link>
+  <bettween>20</bettween>
+  <width>10</width>
+ </link>
+ <change>
+  <mark>
+   <radius>8</radius>
+   <radius-inside>6</radius-inside>
+   <color-inside>#fff</color-inside>
+   <font>
+    <family>ＭＳ ゴシック</family>
+    <size>-6</size>
+    <weight>bold</weight>
+   </font>
+  </mark>
+  <text>
+   <font>
+    <family>ＭＳ ゴシック</family>
+    <size>-12</size>
+    <weight>normal</weight>
+   </font>
+   <color>#888</color>
+   <height>12</height>
+  </text>
+ </change>
+</style>
