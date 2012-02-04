@@ -400,9 +400,44 @@ class LineInfo(object):
             for link in links:
                 if link.begin_idx < begin_idx:
                     continue
-                if link.begin_idx >= end_idx:
+                if link.begin_idx > end_idx:
                     raise StopIteration
                 yield link
+            raise StopIteration
+
+    def gen_stations(self, begin_idx=0, end_idx=-1):
+        """
+        Arguments:
+            begin_idx -- begin stataion index
+            end_idx -- end station index
+        """
+        while begin_idx < 0:
+            begin_idx += len(self.stations)
+        while end_idx < 0:
+            end_idx += len(self.stations)
+
+        if begin_idx == end_idx:
+            raise StopIteration
+        links = list(self.links)
+        if begin_idx > end_idx:
+            links.reverse()
+            links = [link.reverse() for link in links]
+            for link in links:
+                if link.begin_idx > begin_idx:
+                    continue
+                if link.begin_idx <= end_idx:
+                    raise StopIteration
+                yield link.begin_idx
+            yield link.end_idx
+            raise StopIteration
+        else:
+            for link in links:
+                if link.begin_idx < begin_idx:
+                    continue
+                if link.begin_idx > end_idx:
+                    raise StopIteration
+                yield link.begin_idx
+            yield link.end_idx
             raise StopIteration
 
     def get_changes(self, idx=None):
@@ -469,7 +504,7 @@ def test():
 
     begin_idx = 0
     end_idx = -1
-    base_idx = 0
+    base_idx = -1
 
     mes = [infos.line.name, infos.line.color]
     base_minutes = infos.get_minutes(begin_idx, base_idx)
@@ -498,6 +533,8 @@ def test():
         )
 
     print u'\n'.join(mes).encode('utf-8')
+
+    print [idx for idx in infos.gen_stations(begin_idx, end_idx)]
 
     print len(infos.stations)
     print infos.__unicode__().encode('utf-8')

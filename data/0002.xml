@@ -1,0 +1,147 @@
+<line-info name="丸ノ内線" color="#e60012" code="M">
+ <stations>
+  <station idx="0" code="01" name="荻窪" latitude="35.704278" longitude="139.62" />
+  <station idx="1" code="02" name="南阿佐ヶ谷" latitude="35.699389" longitude="139.635667" />
+  <station idx="2" code="03" name="新高円寺" latitude="35.697778" longitude="139.648056" />
+  <station idx="3" code="04" name="東高円寺" latitude="35.698" longitude="139.657833" />
+  <station idx="4" code="05" name="新中野" latitude="35.6975" longitude="139.668889" />
+  <station idx="5" code="06" name="中野坂上" latitude="35.697" longitude="139.682778" />
+  <station idx="6" code="07" name="西新宿" latitude="35.694389" longitude="139.692806" />
+  <station idx="7" code="08" name="新宿" latitude="35.692222" longitude="139.700833" />
+  <station idx="8" code="09" name="新宿三丁目" latitude="35.690861" longitude="139.704861" />
+  <station idx="9" code="10" name="新宿御苑前" latitude="35.688583" longitude="139.710694" />
+  <station idx="10" code="11" name="四ツ谷三丁目" latitude="35.687944" longitude="139.720083" />
+  <station idx="11" code="12" name="四ツ谷" latitude="35.685" longitude="139.729861" />
+  <station idx="12" code="13" name="赤坂見附" latitude="35.676944" longitude="139.736944" />
+  <station idx="13" code="14" name="国会議事堂" latitude="35.674167" longitude="139.745278" />
+  <station idx="14" code="15" name="霞ヶ関" latitude="35.673889" longitude="139.751111" />
+  <station idx="15" code="16" name="銀座" latitude="35.671944" longitude="139.763889" />
+  <station idx="16" code="17" name="東京" latitude="35.681667" longitude="139.764833" />
+  <station idx="17" code="18" name="大手町" latitude="35.686944" longitude="139.766278" />
+  <station idx="18" code="19" name="淡路町" latitude="35.695278" longitude="139.767444" />
+  <station idx="19" code="20" name="御茶ノ水" latitude="35.700556" longitude="139.764028" />
+  <station idx="20" code="21" name="本郷三丁目" latitude="35.706667" longitude="139.76" />
+  <station idx="21" code="22" name="後楽園" latitude="35.707361" longitude="139.751111" />
+  <station idx="22" code="23" name="茗荷谷" latitude="35.717361" longitude="139.736806" />
+  <station idx="23" code="24" name="新大塚" latitude="35.725833" longitude="139.729861" />
+  <station idx="24" code="25" name="池袋" latitude="35.73" longitude="139.711944" />
+ </stations>
+ <links>
+  <link begin-idx="0" end-idx="1" kilometers="1.5" minutes="3" />
+  <link begin-idx="1" end-idx="2" kilometers="1.2" minutes="2" />
+  <link begin-idx="2" end-idx="3" kilometers="0.9" minutes="2" />
+  <link begin-idx="3" end-idx="4" kilometers="1.0" minutes="2" />
+  <link begin-idx="4" end-idx="5" kilometers="1.1" minutes="2" />
+  <link begin-idx="5" end-idx="6" kilometers="1.1" minutes="2" />
+  <link begin-idx="6" end-idx="7" kilometers="0.8" minutes="2" />
+  <link begin-idx="7" end-idx="8" kilometers="0.3" minutes="1" />
+  <link begin-idx="8" end-idx="9" kilometers="0.7" minutes="2" />
+  <link begin-idx="9" end-idx="10" kilometers="0.9" minutes="2" />
+  <link begin-idx="10" end-idx="11" kilometers="1.0" minutes="2" />
+  <link begin-idx="11" end-idx="12" kilometers="1.3" minutes="3" />
+  <link begin-idx="12" end-idx="13" kilometers="0.9" minutes="2" />
+  <link begin-idx="13" end-idx="14" kilometers="0.7" minutes="2" />
+  <link begin-idx="14" end-idx="15" kilometers="0.7" minutes="2" />
+  <link begin-idx="15" end-idx="16" kilometers="1.0" minutes="3" />
+  <link begin-idx="16" end-idx="17" kilometers="1.1" minutes="1" />
+  <link begin-idx="17" end-idx="18" kilometers="0.9" minutes="2" />
+  <link begin-idx="18" end-idx="19" kilometers="0.9" minutes="2" />
+  <link begin-idx="19" end-idx="20" kilometers="0.8" minutes="2" />
+  <link begin-idx="20" end-idx="21" kilometers="0.8" minutes="2" />
+  <link begin-idx="21" end-idx="22" kilometers="0.9" minutes="2" />
+  <link begin-idx="22" end-idx="23" kilometers="1.2" minutes="2" />
+  <link begin-idx="23" end-idx="24" kilometers="1.8" minutes="3" />
+ </links>
+ <changes>
+  <!-- 新宿三丁目 -->
+  <change idx="8">
+   <line name="副都心線" color="#bb641d" code="F" />
+   <station name="新宿三丁目" code="13" />
+  </change>
+  <!-- 四ツ谷 -->
+  <change idx="11">
+   <line name="南北線" color="#00ada9" code="N" />
+   <station name="四ツ谷" code="08" />
+  </change>
+  <!-- 赤坂見附 -->
+  <change idx="12">
+   <line name="銀座線" color="#f39700" code="G" />
+   <station name="赤坂見附" code="05" />
+  </change>
+  <change idx="12">
+   <line name="有楽町線" color="#d7c447" code="Y" />
+   <station name="永田町" code="16" />
+  </change>
+  <change idx="12">
+   <line name="半蔵門線" color="#9b7cb6" code="Z" />
+   <station name="永田町" code="04" />
+  </change>
+  <change idx="12">
+   <line name="南北線" color="#00ada9" code="N" />
+   <station name="永田町" code="07" />
+  </change>
+  <!-- 国会議事堂前 -->
+  <change idx="13">
+   <line name="銀座線" color="#f39700" code="G" />
+   <station name="溜池山王" code="06" />
+  </change>
+  <change idx="13">
+   <line name="千代田線" color="#009944" code="C" />
+   <station name="国会議事堂前" code="07" />
+  </change>
+  <change idx="13">
+   <line name="南北線" color="#00ada9" code="N" />
+   <station name="溜池山王" code="06" />
+  </change>
+  <!-- 霞ヶ関 -->
+  <change idx="14">
+   <line name="日比谷線" color="#9caeb7" code="H" />
+   <station name="霞ヶ関" code="06" />
+  </change>
+  <change idx="14">
+   <line name="千代田線" color="#009944" code="C" />
+   <station name="霞ヶ関" code="08" />
+  </change>
+  <!-- 銀座 -->
+  <change idx="15">
+   <line name="銀座線" color="#f39700" code="G" />
+   <station name="銀座" code="09" />
+  </change>
+  <change idx="15">
+   <line name="日比谷線" color="#9caeb7" code="H" />
+   <station name="銀座" code="07" />
+  </change>
+  <!-- 大手町 -->
+  <change idx="17">
+   <line name="東西線" color="#00a7db" code="T" />
+   <station name="大手町" code="09" />
+  </change>
+  <change idx="17">
+   <line name="千代田線" color="#009944" code="C" />
+   <station name="大手町" code="11" />
+  </change>
+  <change idx="17">
+   <line name="半蔵門線" color="#9b7cb6" code="Z" />
+   <station name="大手町" code="08" />
+  </change>
+  <!-- 淡路町 -->
+  <change idx="18">
+   <line name="千代田線" color="#009944" code="C" />
+   <station name="新御茶ノ水" code="12" />
+  </change>
+  <!-- 後楽園 -->
+  <change idx="21">
+   <line name="南北線" color="#00ada9" code="N" />
+   <station name="後楽園" code="11" />
+  </change>
+  <!-- 池袋 -->
+  <change idx="24">
+   <line name="有楽町線" color="#d7c447" code="Y" />
+   <station name="池袋" code="09" />
+  </change>
+  <change idx="24">
+   <line name="副都心線" color="#bb641d" code="F" />
+   <station name="池袋" code="09" />
+  </change>
+ </changes>
+</line-info>

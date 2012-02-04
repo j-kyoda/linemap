@@ -62,6 +62,8 @@ class LineMap(Tk.Frame):
         self.view.configure(scrollregion=(0, 0,
                                           canvas_width + 1,
                                           canvas_height + 1))
+        for oid in self.view.find_all():
+            self.view.delete(oid)
 
     def draw_mark(self, center, color, mark, text):
         """
@@ -124,6 +126,8 @@ class LineMap(Tk.Frame):
             center.x += style.change.mark.radius * 2
 
         # text
+        if not text_changes:
+            return
         change_text = u', '.join(
             ['%s' % change.line.name for change in text_changes]
             )
@@ -191,40 +195,43 @@ class LineMap(Tk.Frame):
 
         # draw
         color = line_info.line.color
+        link_length = 0
         for link in line_info.gen_links(span.begin_idx, span.end_idx):
-            link_height = sum([
+            link_length += sum([
                 style.station.mark.radius,
                 style.link.between,
                 self.calc_change_height(line_info, style, link.begin_idx),
                 style.station.mark.radius,
                 ])
-            # draw link
-            pos_list = [(center_x, center_y),
-                        (center_x, center_y + link_height)]
-            self.view.create_line(*pos_list,
-                                  smooth=False,
-                                  fill=line_info.line.color,
-                                  width=style.link.width)
+        # draw link
+        pos_list = [(center_x, center_y),
+                    (center_x, center_y + link_length)]
+        self.view.create_line(*pos_list,
+                              smooth=False,
+                              fill=line_info.line.color,
+                              width=style.link.width)
+
+        for station_idx in line_info.gen_stations(span.begin_idx, span.end_idx):
+            link_height = sum([
+                style.station.mark.radius,
+                style.link.between,
+                self.calc_change_height(line_info, style, station_idx),
+                style.station.mark.radius,
+                ])
             # draw station
             kilo = line_info.get_kilometers(
                 span.begin_idx, link.begin_idx, base_kilos)
             minutes = line_info.get_minutes(
-                span.begin_idx, link.begin_idx, base_minutes)
-            node_name = line_info.get_station_name(link.begin_idx)
+                span.begin_idx, station_idx, base_minutes)
+            node_name = line_info.get_station_name(station_idx)
             self.draw_node(Point(center_x, center_y), color, node_name,
                            minutes, style)
             # draw change
-            changes = line_info.get_changes(link.begin_idx)
+            changes = line_info.get_changes(station_idx)
             self.draw_change(Point(center_x, center_y), changes, style)
 
             center_y += link_height
 
-        minutes = line_info.get_minutes(span.begin_idx,
-                                         span.end_idx,
-                                         base_minutes)
-        node_name = line_info.get_station_name(span.end_idx)
-        self.draw_node(Point(center_x, center_y),
-                       color, node_name, minutes, style)
 
     @classmethod
     def calc_change_height(cls, line_info, style, idx):
@@ -232,6 +239,7 @@ class LineMap(Tk.Frame):
         Arguments:
             line_info -- line info
             style -- decoration info
+            idx -- station index
         """
         changes = line_info.get_changes(idx)
         mark_height = 0
@@ -252,9 +260,7 @@ class LineMap(Tk.Frame):
             begin_idx -- begin index
             end_idx -- end index
         """
-        idx_list = [link.begin_idx
-                    for link in line_info.gen_links(begin_idx, end_idx)]
-        idx_list.append(end_idx)
+        idx_list = [idx for idx in line_info.gen_stations(begin_idx, end_idx)]
         total_height = sum([cls.calc_change_height(line_info, style, idx)
                             for idx in idx_list])
 
@@ -299,6 +305,7 @@ def test():
 
     line_map = LineMap()
     line_map.draw(infos, style, Span(-1, 0, -1))
+    #line_map.draw(infos, style, Span(0, -1))
     line_map.mainloop()
 
 if __name__ == "__main__":

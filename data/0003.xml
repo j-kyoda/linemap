@@ -1,0 +1,20 @@
+<line-info name="丸ノ内線" color="#e60012" code="m">
+ <stations>
+  <station idx="0" code="03" name="方南町" latitude="35.683417" longitude="139.657167" />
+  <station idx="1" code="04" name="中野富士見町" latitude="35.690556" longitude="139.666944" />
+  <station idx="2" code="05" name="中野新橋" latitude="35.692222" longitude="139.673944" />
+  <station idx="3" code="06" name="中野坂上" latitude="35.697" longitude="139.682778" />
+ </stations>
+ <links>
+  <link begin-idx="0" end-idx="1" kilometers="1.3" minutes="2" />
+  <link begin-idx="1" end-idx="2" kilometers="0.6" minutes="2" />
+  <link begin-idx="2" end-idx="3" kilometers="1.3" minutes="2" />
+ </links>
+ <changes>
+  <!-- 中野坂上 -->
+  <change idx="3">
+   <line name="丸ノ内線" color="#e60012" code="M" />
+   <station name="中野坂上" code="06" />
+  </change>
+ </changes>
+</line-info>
