@@ -1,0 +1,90 @@
+<line-info name="東西線" color="#00a7db" code="T">
+ <stations>
+  <station idx="0" code="01" name="中野" latitude="35.705833" longitude="139.665556" />
+  <station idx="1" code="02" name="落合" latitude="35.71075" longitude="139.686333" />
+  <station idx="2" code="03" name="高田馬場" latitude="35.713694" longitude="139.704111" />
+  <station idx="3" code="04" name="早稲田" latitude="35.705833" longitude="139.721306" />
+  <station idx="4" code="05" name="神楽坂" latitude="35.703889" longitude="139.734222" />
+  <station idx="5" code="06" name="飯田橋" latitude="35.701944" longitude="139.745611" />
+  <station idx="6" code="07" name="九段下" latitude="35.695472" longitude="139.751417" />
+  <station idx="7" code="08" name="竹橋" latitude="35.69075" longitude="139.756861" />
+  <station idx="8" code="09" name="大手町" latitude="35.684667" longitude="139.766056" />
+  <station idx="9" code="10" name="日本橋" latitude="35.682528" longitude="139.773694" />
+  <station idx="10" code="11" name="茅場町" latitude="35.679944" longitude="139.780139" />
+  <station idx="11" code="12" name="門前仲町" latitude="35.672389" longitude="139.794917" />
+  <station idx="12" code="13" name="木場" latitude="35.669444" longitude="139.806528" />
+  <station idx="13" code="14" name="東陽町" latitude="35.669583" longitude="139.8175" />
+  <station idx="14" code="15" name="南砂町" latitude="35.668833" longitude="139.830667" />
+  <station idx="15" code="16" name="西葛西" latitude="35.664583" longitude="139.859361" />
+  <station idx="16" code="17" name="葛西" latitude="35.663611" longitude="139.872694" />
+  <station idx="17" code="18" name="浦安" latitude="35.665833" longitude="139.892917" />
+  <station idx="18" code="19" name="南行徳" latitude="35.672778" longitude="139.902278" />
+  <station idx="19" code="20" name="行徳" latitude="35.682639" longitude="139.914167" />
+  <station idx="20" code="21" name="妙典" latitude="35.691611" longitude="139.925" />
+  <station idx="21" code="22" name="原木中山" latitude="35.70325" longitude="139.941806" />
+  <station idx="22" code="23" name="西船橋" latitude="35.707222" longitude="139.959444" />
+ </stations>
+ <links>
+  <link begin-idx="0" end-idx="1" kilometers="2.0" minutes="3" />
+  <link begin-idx="1" end-idx="2" kilometers="1.9" minutes="3" />
+  <link begin-idx="2" end-idx="3" kilometers="1.7" minutes="3" />
+  <link begin-idx="3" end-idx="4" kilometers="1.2" minutes="2" />
+  <link begin-idx="4" end-idx="5" kilometers="1.2" minutes="2" />
+  <link begin-idx="5" end-idx="6" kilometers="0.7" minutes="2" />
+  <link begin-idx="6" end-idx="7" kilometers="1.0" minutes="2" />
+  <link begin-idx="7" end-idx="8" kilometers="1.0" minutes="2" />
+  <link begin-idx="8" end-idx="9" kilometers="0.8" minutes="2" />
+  <link begin-idx="9" end-idx="10" kilometers="0.5" minutes="1" />
+  <link begin-idx="10" end-idx="11" kilometers="1.8" minutes="3" />
+  <link begin-idx="11" end-idx="12" kilometers="1.1" minutes="2" />
+  <link begin-idx="12" end-idx="13" kilometers="0.9" minutes="1" />
+  <link begin-idx="13" end-idx="14" kilometers="1.2" minutes="3" />
+  <link begin-idx="14" end-idx="15" kilometers="2.7" minutes="3" />
+  <link begin-idx="15" end-idx="16" kilometers="1.2" minutes="2" />
+  <link begin-idx="16" end-idx="17" kilometers="1.9" minutes="2" />
+  <link begin-idx="17" end-idx="18" kilometers="1.2" minutes="2" />
+  <link begin-idx="18" end-idx="19" kilometers="1.5" minutes="2" />
+  <link begin-idx="19" end-idx="20" kilometers="1.3" minutes="2" />
+  <link begin-idx="20" end-idx="21" kilometers="2.1" minutes="3" />
+  <link begin-idx="21" end-idx="22" kilometers="1.9" minutes="3" />
+ </links>
+ <changes>
+  <!-- 飯田橋 -->
+  <change idx="5">
+   <line name="有楽町線" color="#d7c447" code="Y" />
+   <station name="飯田橋" code="13" />
+  </change>
+  <change idx="5">
+   <line name="南北線" color="#00ada9" code="N" />
+   <station name="飯田橋" code="10" />
+  </change>
+  <!-- 九段下 -->
+  <change idx="6">
+   <line name="半蔵門線" color="#9b7cb6" code="Z" />
+   <station name="九段下" code="06" />
+  </change>
+  <!-- 大手町 -->
+  <change idx="8">
+   <line name="丸ノ内線" color="#e60012" code="M" />
+   <station name="大手町" code="18" />
+  </change>
+  <change idx="8">
+   <line name="千代田線" color="#009944" code="C" />
+   <station name="大手町" code="11" />
+  </change>
+  <change idx="8">
+   <line name="半蔵門線" color="#9b7cb6" code="Z" />
+   <station name="大手町" code="08" />
+  </change>
+  <!-- 日本橋 -->
+  <change idx="9">
+   <line name="銀座線" color="#f39700" code="G" />
+   <station name="日本橋" code="11" />
+  </change>
+  <!-- 茅場町 -->
+  <change idx="10">
+   <line name="日比谷線" color="#9caeb7" code="H" />
+   <station name="茅場町" code="12" />
+  </change>
+ </changes>
+</line-info>

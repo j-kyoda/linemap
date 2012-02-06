@@ -400,7 +400,7 @@ class LineInfo(object):
             for link in links:
                 if link.begin_idx < begin_idx:
                     continue
-                if link.begin_idx > end_idx:
+                if link.begin_idx >= end_idx:
                     raise StopIteration
                 yield link
             raise StopIteration
@@ -500,10 +500,10 @@ class LineInfo(object):
 def test():
     """Sample
     """
-    infos = LineInfo.load('data/0001.xml')
+    infos = LineInfo.load('data/0005.xml')
 
-    begin_idx = 0
-    end_idx = -1
+    begin_idx = -1
+    end_idx = 0
     base_idx = -1
 
     mes = [infos.line.name, infos.line.color]
@@ -534,6 +534,7 @@ def test():
 
     print u'\n'.join(mes).encode('utf-8')
 
+    print [link for link in infos.gen_links(begin_idx, end_idx)]
     print [idx for idx in infos.gen_stations(begin_idx, end_idx)]
 
     print len(infos.stations)
