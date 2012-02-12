@@ -1,0 +1,98 @@
+<line-info name="半蔵門線" color="#9b7cb6" code="Z">
+ <stations>
+  <station idx="0" code="01" name="渋谷" latitude="35.659444" longitude="139.701944" />
+  <station idx="1" code="02" name="表参道" latitude="35.665278" longitude="139.7125" />
+  <station idx="2" code="03" name="青山一丁目" latitude="35.672778" longitude="139.724028" />
+  <station idx="3" code="04" name="永田町" latitude="35.678611" longitude="139.740278" />
+  <station idx="4" code="05" name="半蔵門" latitude="35.685694" longitude="139.741667" />
+  <station idx="5" code="06" name="九段下" latitude="35.695472" longitude="139.751417" />
+  <station idx="6" code="07" name="神保町" latitude="35.695917" longitude="139.758056" />
+  <station idx="7" code="08" name="大手町" latitude="35.686667" longitude="139.765" />
+  <station idx="8" code="09" name="三越前" latitude="35.684889" longitude="139.773167" />
+  <station idx="9" code="10" name="水天宮前" latitude="35.682056" longitude="139.786028" />
+  <station idx="10" code="11" name="清澄白川" latitude="35.682056" longitude="139.798806" />
+  <station idx="11" code="12" name="住吉" latitude="35.689" longitude="139.815722" />
+  <station idx="12" code="13" name="錦糸町" latitude="35.696389" longitude="139.815" />
+  <station idx="13" code="14" name="押上" latitude="35.710139" longitude="139.813389" />
+ </stations>
+ <links>
+  <link begin-idx="0" end-idx="1" kilometers="1.3" minutes="2" />
+  <link begin-idx="1" end-idx="2" kilometers="1.4" minutes="2" />
+  <link begin-idx="2" end-idx="3" kilometers="1.4" minutes="3" />
+  <link begin-idx="3" end-idx="4" kilometers="1.0" minutes="2" />
+  <link begin-idx="4" end-idx="5" kilometers="1.6" minutes="2" />
+  <link begin-idx="5" end-idx="6" kilometers="0.4" minutes="1" />
+  <link begin-idx="6" end-idx="7" kilometers="1.7" minutes="3" />
+  <link begin-idx="7" end-idx="8" kilometers="0.7" minutes="2" />
+  <link begin-idx="8" end-idx="9" kilometers="1.3" minutes="3" />
+  <link begin-idx="9" end-idx="10" kilometers="1.7" minutes="3" />
+  <link begin-idx="10" end-idx="11" kilometers="1.9" minutes="3" />
+  <link begin-idx="11" end-idx="12" kilometers="1.0" minutes="2" />
+  <link begin-idx="12" end-idx="13" kilometers="1.4" minutes="2" />
+ </links>
+ <changes>
+  <!-- 渋谷 -->
+  <change idx="0">
+   <line name="銀座線" color="#f39700" code="G" />
+   <station name="渋谷" code="01" />
+  </change>
+  <change idx="0">
+   <line name="副都心線" color="#bb641d" code="F" />
+   <station name="渋谷" code="16" />
+  </change>
+  <!-- 表参道 -->
+  <change idx="1">
+   <line name="銀座線" color="#f39700" code="G" />
+   <station name="表参道" code="02" />
+  </change>
+  <change idx="1">
+   <line name="千代田線" color="#009944" code="C" />
+   <station name="表参道" code="04" />
+  </change>
+  <!-- 青山一丁目 -->
+  <change idx="2">
+   <line name="銀座線" color="#f39700" code="G" />
+   <station name="青山一丁目" code="04" />
+  </change>
+  <!-- 永田町 -->
+  <change idx="3">
+   <line name="銀座線" color="#f39700" code="G" />
+   <station name="赤坂見附" code="05" />
+  </change>
+  <change idx="3">
+   <line name="丸ノ内線" color="#e60012" code="M" />
+   <station name="赤坂見附" code="13" />
+  </change>
+  <change idx="3">
+   <line name="有楽町線" color="#d7c447" code="Y" />
+   <station name="永田町" code="16" />
+  </change>
+  <change idx="3">
+   <line name="南北線" color="#00ada9" code="N" />
+   <station name="永田町" code="07" />
+  </change>
+  <!-- 九段下 -->
+  <change idx="5">
+   <line name="東西線" color="#00a7db" code="T" />
+   <station name="九段下" code="07" />
+  </change>
+  <!-- 大手町 -->
+  <change idx="7">
+   <line name="丸ノ内線" color="#e60012" code="M" />
+   <station name="大手町" code="18" />
+  </change>
+  <change idx="7">
+   <line name="東西線" color="#00a7db" code="T" />
+   <station name="大手町" code="09" />
+  </change>
+  <change idx="7">
+   <line name="千代田線" color="#009944" code="C" />
+   <station name="大手町" code="11" />
+  </change>
+  <!-- 三越前 -->
+  <change idx="8">
+   <line name="銀座線" color="#f39700" code="G" />
+   <station name="銀座" code="09" />
+  </change>
+ </changes>
+</line-info>

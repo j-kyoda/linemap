@@ -1,0 +1,99 @@
+<line-info name="南北線" color="#00ada9" code="N">
+ <stations>
+  <station idx="0" code="01" name="目黒" latitude="35.634028" longitude="139.715833" />
+  <station idx="1" code="02" name="白金台" latitude="35.637889" longitude="139.726111" />
+  <station idx="2" code="03" name="白金高輪" latitude="35.642917" longitude="139.734167" />
+  <station idx="3" code="04" name="麻布十番" latitude="35.654722" longitude="139.736944" />
+  <station idx="4" code="05" name="六本木一丁目" latitude="35.665556" longitude="139.739028" />
+  <station idx="5" code="06" name="溜池山王" latitude="35.671944" longitude="139.741389" />
+  <station idx="6" code="07" name="永田町" latitude="35.678194" longitude="139.74" />
+  <station idx="7" code="08" name="四ツ谷" latitude="35.686306" longitude="139.729611" />
+  <station idx="8" code="09" name="市ヶ谷" latitude="35.692972" longitude="139.736389" />
+  <station idx="9" code="10" name="飯田橋" latitude="35.701667" longitude="139.743556" />
+  <station idx="10" code="11" name="後楽園" latitude="35.707306" longitude="139.751861" />
+  <station idx="11" code="12" name="東大前" latitude="35.717639" longitude="139.758056" />
+  <station idx="12" code="13" name="本駒込" latitude="35.724167" longitude="139.753806" />
+  <station idx="13" code="14" name="駒込" latitude="35.736389" longitude="139.746611" />
+  <station idx="14" code="15" name="西ヶ原" latitude="35.745833" longitude="139.742222" />
+  <station idx="15" code="16" name="王子" latitude="35.754444" longitude="139.737333" />
+  <station idx="16" code="17" name="王子神谷" latitude="35.765111" longitude="139.735778" />
+  <station idx="17" code="18" name="志茂" latitude="35.777917" longitude="139.732583" />
+  <station idx="18" code="19" name="赤羽岩淵" latitude="35.783333" longitude="139.722222" />
+ </stations>
+ <links>
+  <link begin-idx="0" end-idx="1" kilometers="1.3" minutes="2" />
+  <link begin-idx="1" end-idx="2" kilometers="1.0" minutes="3" />
+  <link begin-idx="2" end-idx="3" kilometers="1.3" minutes="2" />
+  <link begin-idx="3" end-idx="4" kilometers="1.2" minutes="2" />
+  <link begin-idx="4" end-idx="5" kilometers="0.9" minutes="2" />
+  <link begin-idx="5" end-idx="6" kilometers="0.9" minutes="2" />
+  <link begin-idx="6" end-idx="7" kilometers="1.3" minutes="2" />
+  <link begin-idx="7" end-idx="8" kilometers="1.0" minutes="2" />
+  <link begin-idx="8" end-idx="9" kilometers="1.1" minutes="2" />
+  <link begin-idx="9" end-idx="10" kilometers="1.4" minutes="2" />
+  <link begin-idx="10" end-idx="11" kilometers="1.3" minutes="3" />
+  <link begin-idx="11" end-idx="12" kilometers="0.9" minutes="2" />
+  <link begin-idx="12" end-idx="13" kilometers="1.4" minutes="2" />
+  <link begin-idx="13" end-idx="14" kilometers="1.4" minutes="3" />
+  <link begin-idx="14" end-idx="15" kilometers="1.0" minutes="1" />
+  <link begin-idx="15" end-idx="16" kilometers="1.2" minutes="3" />
+  <link begin-idx="16" end-idx="17" kilometers="1.6" minutes="2" />
+  <link begin-idx="17" end-idx="18" kilometers="1.1" minutes="2" />
+ </links>
+ <changes>
+  <!-- 溜池山王 -->
+  <change idx="5">
+   <line name="銀座線" color="#f39700" code="G" />
+   <station name="溜池山王" code="06" />
+  </change>
+  <change idx="5">
+   <line name="丸ノ内線" color="#e60012" code="M" />
+   <station name="国会議事堂前" code="14" />
+  </change>
+  <change idx="5">
+   <line name="千代田線" color="#009944" code="C" />
+   <station name="国会議事堂前" code="07" />
+  </change>
+  <!-- 永田町" -->
+  <change idx="6">
+   <line  name="銀座線" color="#f39700" code="G" />
+   <station station-name="赤坂見附" code="05" />
+  </change>
+  <change idx="6">
+   <line name="丸ノ内線" color="#e60012" code="M" />
+   <station name="赤坂見附" code="13" />
+  </change>
+  <change idx="6">
+   <line name="有楽町線" color="#d7c447" code="Y" />
+   <station name="永田町" code="16" />
+  </change>
+  <change idx="6">
+   <line name="半蔵門線" color="#9b7cb6" code="Z" />
+   <station name="永田町" code="04" />
+  </change>
+  <!-- 四ツ谷 -->
+  <change idx="7">
+   <line name="丸ノ内線" color="#e60012" code="M" />
+   <station name="四ツ谷" code="12" />
+  </change>
+  <!-- 市ヶ谷 -->
+  <change idx="8">
+   <line name="有楽町線" color="#d7c447" code="Y" />
+   <station name="市ヶ谷" code="14" />
+  </change>
+  <!-- 飯田橋 -->
+  <change idx="9">
+   <line name="東西線" color="#00a7db" code="T" />
+   <station name="飯田橋" code="06" />
+  </change>
+  <change idx="9">
+   <line name="有楽町線" color="#d7c447" code="Y" />
+   <station name="飯田橋" code="13" />
+  </change>
+  <!-- 後楽園 -->
+  <change idx="10">
+   <line name="丸ノ内線" color="#e60012" code="M" />
+   <station name="後楽園" code="22" />
+  </change>
+ </changes>
+</line-info>
