@@ -211,7 +211,8 @@ class LineMap(Tk.Frame):
                               fill=line_info.line.color,
                               width=style.link.width)
 
-        for station_idx in line_info.gen_stations(span.begin_idx, span.end_idx):
+        for station_idx in line_info.gen_stations(span.begin_idx,
+                                                  span.end_idx):
             link_height = sum([
                 style.station.mark.radius,
                 style.link.between,
@@ -231,7 +232,6 @@ class LineMap(Tk.Frame):
             self.draw_change(Point(center_x, center_y), changes, style)
 
             center_y += link_height
-
 
     @classmethod
     def calc_change_height(cls, line_info, style, idx):
