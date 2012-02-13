@@ -1,0 +1,67 @@
+<line-info name="副都心線" color="#bb641d" code="F">
+ <stations>
+  <station idx="0" code="01" name="和光市" latitude="35.788472" longitude="139.6125" />
+  <station idx="1" code="02" name="地下鉄成増" latitude="35.776528" longitude="139.631528" />
+  <station idx="2" code="03" name="地下鉄赤塚" latitude="35.77" longitude="139.644028" />
+  <station idx="3" code="04" name="平和台" latitude="35.757861" longitude="139.653778" />
+  <station idx="4" code="05" name="氷川台" latitude="35.749806" longitude="139.665" />
+  <station idx="5" code="06" name="小竹向原" latitude="35.743889" longitude="139.678611" />
+  <station idx="6" code="07" name="千川" latitude="35.738417" longitude="139.689167" />
+  <station idx="7" code="08" name="要町" latitude="35.733222" longitude="139.698722" />
+  <station idx="8" code="09" name="池袋" latitude="35.730833" longitude="139.709861" />
+  <station idx="9" code="10" name="雑司が谷" latitude="35.720167" longitude="139.714778" />
+  <station idx="10" code="11" name="西早稲田" latitude="35.707944" longitude="139.709028" />
+  <station idx="11" code="12" name="東新宿" latitude="35.697944" longitude="139.707444" />
+  <station idx="12" code="13" name="新宿三丁目" latitude="35.690861" longitude="139.704861" />
+  <station idx="13" code="14" name="北参道" latitude="35.678167" longitude="139.705694" />
+  <station idx="14" code="15" name="明治神宮前" latitude="35.668472" longitude="139.705417" />
+  <station idx="15" code="16" name="渋谷" latitude="35.658889" longitude="139.702778" />
+ </stations>
+ <links>
+  <link begin-idx="0" end-idx="1" kilometers="2.2" minutes="3" />
+  <link begin-idx="1" end-idx="2" kilometers="1.4" minutes="2" />
+  <link begin-idx="2" end-idx="3" kilometers="1.8" minutes="3" />
+  <link begin-idx="3" end-idx="4" kilometers="1.4" minutes="2" />
+  <link begin-idx="4" end-idx="5" kilometers="1.5" minutes="2" />
+  <link begin-idx="5" end-idx="6" kilometers="1.1" minutes="2" />
+  <link begin-idx="6" end-idx="7" kilometers="1.0" minutes="2" />
+  <link begin-idx="7" end-idx="8" kilometers="0.9" minutes="2" />
+  <link begin-idx="8" end-idx="9" kilometers="1.8" minutes="3" />
+  <link begin-idx="9" end-idx="10" kilometers="1.5" minutes="2" />
+  <link begin-idx="10" end-idx="11" kilometers="0.9" minutes="2" />
+  <link begin-idx="11" end-idx="12" kilometers="1.1" minutes="3" />
+  <link begin-idx="12" end-idx="13" kilometers="1.4" minutes="2" />
+  <link begin-idx="13" end-idx="14" kilometers="1.2" minutes="3" />
+  <link begin-idx="14" end-idx="15" kilometers="1.0" minutes="2" />
+ </links>
+ <changes>
+  <!-- 池袋 -->
+  <change idx="8">
+   <line name="丸ノ内線" color="#e60012" code="M" />
+   <station name="池袋" code="25" />
+  </change>
+  <change idx="8">
+   <line name="有楽町線" color="#d7c447" code="Y" />
+   <station name="池袋" code="09" />
+  </change>
+  <!-- 新宿三丁目 -->
+  <change idx="12">
+   <line name="丸ノ内線" color="#e60012" code="M" />
+   <station name="池袋" code="09" />
+  </change>
+  <!-- 明治神宮前 -->
+  <change idx="14">
+   <line name="千代田線" color="#009944" code="C" />
+   <station name="明治神宮前" code="03" />
+  </change>
+  <!-- 渋谷 -->
+  <change idx="15">
+   <line name="銀座線" color="#f39700" code="G" />
+   <station name="渋谷" code="01" />
+  </change>
+  <change idx="15">
+   <line name="半蔵門線" color="#9b7cb6" code="Z" />
+   <station name="渋谷" code="01" />
+  </change>
+ </changes>
+</line-info>
