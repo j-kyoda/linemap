@@ -447,6 +447,8 @@ class LineInfo(object):
         """
         if idx is None:
             return tuple(self.changes)
+        while idx < 0:
+            idx += len(self.stations)
         return [change for change in self.changes if change.has_idx(idx)]
 
     def get_minutes(self, begin_idx, end_idx, base_minutes=0):
@@ -500,11 +502,11 @@ class LineInfo(object):
 def test():
     """Sample
     """
-    infos = LineInfo.load('data/0005.xml')
+    infos = LineInfo.load('data/0001.xml')
 
     begin_idx = -1
     end_idx = 0
-    base_idx = -1
+    base_idx = begin_idx
 
     mes = [infos.line.name, infos.line.color]
     base_minutes = infos.get_minutes(begin_idx, base_idx)
@@ -531,6 +533,11 @@ def test():
             infos.get_station_name(end_idx),
             )
         )
+    change_text = u'\n'.join(
+        ['         -> %s' % change.line.name \
+         for change in infos.get_changes(end_idx)])
+    if change_text:
+        mes.append(change_text)
 
     print u'\n'.join(mes).encode('utf-8')
 
